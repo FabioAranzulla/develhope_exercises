@@ -9,7 +9,9 @@
     <style>
         aside {
             display: flex;
-            flex-direction: column;
+            flex-direction: column; 
+            justify-content: space-between;
+            align-items: center;
             width: 200px;
             height: 100vh;
             border: 2px solid black;
@@ -21,50 +23,55 @@
             padding: 10px;
         }
 
-        ul li {
-            color: #2b2b2b;
+        li {
             list-style-type: none;
+            
         }
 
-        li:hover {
-            color: yellow;
+        li>a {
+            color: #2b2b2b; 
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #2b2bb2;
             transition-duration: 0.3s;
         }
 
-        .footer {
+        footer {
             display: flex;
-            flex-direction: column; 
-            align-items: center;  
-            background-color: red;
+            flex-direction: column;
         }
 
         footer>img{
-            width: 150px;
-            height: 100px;
+            width: 100px;
+            height: 80px;
+            align-items: flex-end;
         }
 
     </style>
 </head>
 
 <body>
-    <aside>
-        <header>
-            <img src="develhope.png" alt="logo develhope">
-        </header>
-        <nav>
-            <ul>
-                <a href="#"><li>link 1</li></a>
-                <a href="#"><li>link 2</li></a>
-                <a href="#"><li>link 3</li></a>
-                <a href="#"><li>link 4</li></a>
-            </ul>
-        </nav>
-        <footer class="footer">
-            <img src="logo.png" alt="logo">
-            <p>Fabio Aranzulla</p>
-        </footer>
-
-    </aside>
+    <main>
+        <aside>
+            <header>
+                <img src="develhope.png" alt="logo develhope">
+                <nav>
+                    <ul>
+                        <li><a href="#">link 1</a></li>
+                        <li><a href="#">link 2</a></li>
+                        <li><a href="#">link 3</a></li>
+                        <li><a href="#">link 4</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <footer>
+                <img src="logo.png" alt="logo">
+                <p>Fabio Aranzulla</p>
+            </footer>
+        </aside>
+    </main>
     
 </body>
 
