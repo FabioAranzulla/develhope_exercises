@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lezione CSS</title>
+    <style>
+        aside {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            height: 100vh;
+            border: 2px solid black;
+        }
+
+        header>img {
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+        }
+
+        ul li {
+            color: #2b2b2b;
+            list-style-type: none;
+        }
+
+        li:hover {
+            color: yellow;
+            transition-duration: 0.3s;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;  
+            background-color: red;
+        }
+
+        footer>img{
+            width: 150px;
+            height: 100px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <aside>
+        <header>
+            <img src="develhope.png" alt="logo develhope">
+        </header>
+        <nav>
+            <ul>
+                <a href="#"><li>link 1</li></a>
+                <a href="#"><li>link 2</li></a>
+                <a href="#"><li>link 3</li></a>
+                <a href="#"><li>link 4</li></a>
+            </ul>
+        </nav>
+        <footer class="footer">
+            <img src="logo.png" alt="logo">
+            <p>Fabio Aranzulla</p>
+        </footer>
+
+    </aside>
+    
+</body>
+
+</html>
