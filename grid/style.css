@@ -1,0 +1,76 @@
+:root {
+    --font-size: 24px;
+    --font-weight: bold;
+    --border: 2px solid rgb(137, 157, 174);
+}
+
+.container{
+    border-radius: 10px;
+    border-radius: 3%;
+    overflow: hidden;
+    width: 380px;
+    font-size: var(--font-size);
+    box-shadow: 0 1px 10px #424c5286;
+}
+
+.calco {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);  
+}
+
+.result {
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    background-color: #424c52;
+    color: #fff;
+    padding: 10px;
+    text-align: end;
+}
+
+.simbol {
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    background-color: #d2dce4;
+    padding: 18px;
+    border: var(--border);
+    background-color: #d2dce4;
+    border-top: none;
+    border-left: none;
+    cursor: pointer;
+}
+
+#right {
+    border-right: none;
+}
+
+.number {   
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    background-color: #eff2f5;
+    border: var(--border);
+    border-left: none;
+    border-top: none;
+    cursor: pointer;
+}
+
+.equal {
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    grid-column: 4;
+    grid-row: 2 / 6;
+    background-color: #ff7077;
+    cursor: pointer;
+    border: var(--border);
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+
+button:active {
+    background-color: rgb(179, 177, 177);
+}
+
+
+
