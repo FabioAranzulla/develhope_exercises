@@ -1,0 +1,40 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    width: 400px;
+    border-radius: 8px;
+    border: 2px solid #ECECEC;
+}
+
+div {
+    border: 2px solid #ECECEC;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+img {
+    max-width: 100%; 
+}
+
+h1,
+p,
+a {
+    margin-left: 20px;
+}
+
+a {
+    color: blue;
+}
+
+.footer {
+    margin-left: -20px;
+}
+
+
